@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Horizontal Rule</h2>
+  <hr>
+  
+  <h2>Blockquote</h2>
+  <blockquote>인용문입니다</blockquote>
+  
+  <h2>Preformatted Text</h2>
+  <pre>
+class Post(models.Model):
+  title = models.CharField(max_length=80)
+  content = models.TextField()
+  
+  def __str__(self):
+    return self.title
+  </pre>
+  
+  <h2>Normal paragraph</h2>
+  <p>
+    class Post(models.Model):
+      title = models.CharField(max_length=80)
+      content = models.TextField()
+      
+      def __str__(self):
+        return self.title
+  </p>
+</body>
+</html>
