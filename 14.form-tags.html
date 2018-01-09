@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <h2>Input tags</h2>
   <form action="">
     <input type="text" name="username">
     <input type="password" name="password">
@@ -21,8 +22,7 @@
     <textarea name="" id="" cols="30" rows="10"></textarea>
   </form>
   
-  <hr>
-  
+  <h2>Label</h2>
   <form action="">
     <div>
       <label>ID <input type="text"></label>
@@ -36,6 +36,61 @@
       <label for="checkbox1">Check</label>
       <input type="checkbox" id="checkbox1">
     </div>
+  </form>
+  
+  <h2>Select</h2>
+  <!-- form>select>(option{Item$})*4 -->
+  <form action="">
+    <select name="" id="">
+      <option value="">Item1</option>
+      <option value="">Item2</option>
+      <option value="">Item3</option>
+      <option value="">Item4</option>
+    </select>
+  </form>
+  
+  <form action="">
+    <select name="" id="" size="6" multiple>
+      <option value="">Item1</option>
+      <option value="">Item2</option>
+      <option value="">Item3</option>
+      <option value="">Item4</option>
+      <option value="">Item5</option>
+      <option value="">Item6</option>
+      <option value="">Item7</option>
+      <option value="">Item8</option>
+    </select>
+  </form>
+  
+  <form action="">
+    <select name="" id="">
+      <optgroup label="Fruits">
+        <option value="">Item1</option>
+        <option value="">Item2</option>
+        <option value="">Item3</option>
+      </optgroup>
+      <optgroup label="Colors">
+        <option value="">Item1</option>
+        <option value="">Item2</option>
+        <option value="">Item3</option>
+      </optgroup>
+    </select>
+  </form>
+  
+  <h2>Fieldset</h2>
+  <form action="">
+    <!-- fieldset>legend+label{username : }>input^label{password : }>input -->
+    <fieldset>
+      <legend>로그인</legend>
+      <label for="">username : <input type="text"></label>
+      <label for="">password : <input type="text"></label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>로그인</legend>
+      <label for="">username : <input type="text"></label>
+      <label for="">password : <input type="text"></label>
+    </fieldset>
   </form>
 </body>
 </html>
